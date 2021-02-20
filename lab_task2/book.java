@@ -55,10 +55,12 @@ public class book{
 	
 	
 	public void addQuantity(int amount){
-		System.out.println("Add Quantity: "+(availableQuantity+amount));
+		availableQuantity = availableQuantity + amount;
+		System.out.println("Add Quantity: "+availableQuantity);
 	}
 	public void sellQuantity(int amount){
-		System.out.println("Sell Quantity: "+(availableQuantity-amount));
+		availableQuantity = availableQuantity-amount;
+		System.out.println("Sell Quantity: "+ availableQuantity);
 	}
 	
 	public void showDetails(){
