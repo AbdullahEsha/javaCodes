@@ -42,7 +42,7 @@ public class storyBook{
 		this.category = category;
 	}
 	public static void setDiscountRate(double rate){
-		this.rate = rate;
+		discountRate = rate;
 	}
 	
 	
@@ -62,7 +62,7 @@ public class storyBook{
 	public int getAvailableQuantity(){
 		return availableQuantity;
 	}
-	public int getCategory(){
+	public String getCategory(){
 		return category;
 	}
 	public static double getDiscountRate( ){
@@ -71,7 +71,7 @@ public class storyBook{
 	
 	
 	public void addQuantity(int amount){
-		availableQuantity = amountavailableQuantity+amount;
+		availableQuantity = availableQuantity+amount;
 		System.out.println("After Add Quantity: "+ availableQuantity);
 	}
 	public void sellQuantity(int amount){

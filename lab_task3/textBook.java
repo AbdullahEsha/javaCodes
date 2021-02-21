@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class storyBook{
+public class textBook{
 	private String isbn;
 	private String bookTitle;
 	private String authorName;
@@ -9,12 +9,12 @@ public class storyBook{
 	private String standard;
 	private static double discountRate;
 	
-	public storyBook(){
+	public textBook(){
 		System.out.println("empty-default");
 	}
 	
-	public storyBook(String isbn, String bookTitle, String authorName, double price, int availableQuantity, String standard){
-		System.out.println("Parameterized-storyBook");
+	public textBook(String isbn, String bookTitle, String authorName, double price, int availableQuantity, String standard){
+		System.out.println("Parameterized-textBook");
 		this.isbn = isbn;
 		this.bookTitle = bookTitle;
 		this.authorName = authorName;
@@ -42,7 +42,7 @@ public class storyBook{
 		this.standard = standard;
 	}
 	public static void setDiscountRate(double rate){
-		this.rate = rate;
+		discountRate = rate;
 	}
 	
 	
@@ -62,7 +62,7 @@ public class storyBook{
 	public int getAvailableQuantity(){
 		return availableQuantity;
 	}
-	public int getStandard(){
+	public String getStandard(){
 		return standard;
 	}
 	public static double getDiscountRate( ){
@@ -71,7 +71,7 @@ public class storyBook{
 	
 	
 	public void addQuantity(int amount){
-		availableQuantity = amountavailableQuantity+amount;
+		availableQuantity = availableQuantity+amount;
 		System.out.println("After Add Quantity: "+ availableQuantity);
 	}
 	public void sellQuantity(int amount){
