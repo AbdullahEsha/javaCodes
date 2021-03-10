@@ -57,12 +57,23 @@ public class book{
 	
 	
 	public void addQuantity(int amount){
-		availableQuantity = availableQuantity+amount;
-		System.out.println("After Add Quantity: "+ availableQuantity);
+		
+		if(amount>0){
+		    availableQuantity = availableQuantity+amount;
+		    System.out.println("After Add Quantity: "+ availableQuantity);
+		}
+		else{
+			System.out.println("Invalid...");
+		}
 	}
 	public void sellQuantity(int amount){
-		availableQuantity = availableQuantity-amount;
-		System.out.println("After Sell Quantity: "+availableQuantity);
+		if(amount<=availableQuantity && amount>0){
+		    availableQuantity = availableQuantity-amount;
+		    System.out.println("After Sell Quantity: "+availableQuantity);
+		}
+		else{
+			System.out.println("Invalid...");
+		}
 	}
 	
 	
