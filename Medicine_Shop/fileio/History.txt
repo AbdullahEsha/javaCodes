@@ -1,0 +1,5 @@
+Customer Inserted.... customer Medicine ID: 11
+Customer Inserted.... customer Medicine ID: 111
+Customer Inserted.... customer Medicine ID: 123
+Customer Inserted.... customer Medicine ID: 2123
+Customer Inserted.... customer Medicine ID: 1233
