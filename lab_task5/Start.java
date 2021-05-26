@@ -25,6 +25,9 @@ public class Start
 		System.out.println("------------------------ Parameterized");
 		
 		sb2.showDetails();
+		sb2.addQuantity(2);
+		sb2.sellQuantity(5);
+		
 		System.out.println("------------------------");
 		
 		TextBook tb1 = new TextBook();
@@ -49,5 +52,7 @@ public class Start
 		System.out.println("------------------------ Parameterized");
 		
 		tb2.showDetails();
+		tb2.addQuantity(2);
+		tb2.sellQuantity(4);
 	}
 }

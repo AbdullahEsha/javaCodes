@@ -1,8 +1,8 @@
 import java.lang.*;
 
-public class TextBook extends Book{
+public class TextBook extends Book
+{
 	private int standard;
-	
 	
 	public TextBook(){
 		super();
@@ -23,14 +23,5 @@ public class TextBook extends Book{
 	
 	public int getStandard(){
 		return standard;
-	}
-	
-	public void showDetails(){
-		 System.out.println("isbn: "+isbn);
-		 System.out.println("Book Title: "+bookTitle);
-		 System.out.println("Author Name: "+authorName);
-		 System.out.println("Price: "+price);
-		 System.out.println("Available Quantity: "+availableQuantity);
-		 System.out.println("Standard: "+standard);
 	}
 }

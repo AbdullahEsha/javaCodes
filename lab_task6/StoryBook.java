@@ -1,8 +1,8 @@
 import java.lang.*;
 
-public class StoryBook extends Book{
+public class StoryBook extends Book
+{
 	private String category;
-	
 	
 	public StoryBook(){
 		super();
@@ -23,13 +23,5 @@ public class StoryBook extends Book{
 	public String getCategory(){
 		return category;
 	}
-	
-	public void showDetails(){
-		 System.out.println("isbn: "+isbn);
-		 System.out.println("Book Title: "+bookTitle);
-		 System.out.println("Author Name: "+authorName);
-		 System.out.println("Price: "+price);
-		 System.out.println("Available Quantity: "+availableQuantity);
-		 System.out.println("Category: "+category);
-	}
 }
+		
